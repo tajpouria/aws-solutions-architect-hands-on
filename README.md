@@ -8,4 +8,5 @@ Introduction
 
 AWS Fundamentals
 
--
+- Create an User and Admin group. Add the user to the Admin group
+- Create an EC2 instance.
