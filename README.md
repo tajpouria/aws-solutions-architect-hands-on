@@ -10,3 +10,4 @@ AWS Fundamentals
 
 - Create an User and Admin group. Add the user to the Admin group
 - Create an EC2 instance.
+- Create a simple private network using Security Groups.
