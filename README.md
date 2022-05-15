@@ -6,7 +6,7 @@ Introduction
 
 - Setup a cost budget that sends an email alert as soon as 1 cent has been spent.
 
-AWS Fundamentals
+IAM and EC2
 
 - Create an User and Admin group. Add the user to the Admin group
 - Create an EC2 instance.
@@ -17,3 +17,9 @@ AWS Fundamentals
 - Create all sorts of Place Groups and experiment with placing EC2 instances in them in the launch menu.
 - Create an ENI and attach it to an instance.
 - Create an instance with Hibernate stop, and Hibernate it.
+
+ELB and ASG
+
+## Resources
+
+[awsboy.com](https://www.awsboy.com/)
