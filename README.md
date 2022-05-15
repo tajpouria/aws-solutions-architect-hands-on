@@ -12,3 +12,4 @@ AWS Fundamentals
 - Create an EC2 instance.
 - Create a simple private network using Security Groups.
 - Allocate an Elastic IP and associate it with an instance.
+- Install Apache2 on an EC2 instance using user data.
