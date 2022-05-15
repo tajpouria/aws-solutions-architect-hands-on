@@ -14,4 +14,6 @@ AWS Fundamentals
 - Allocate an Elastic IP and associate it with an instance.
 - Install Apache2 on an EC2 instance using user data.
 - Create an web server AMI and use it to launch an instance.
-- 
+- Create all sorts of Place Groups and experiment with placing EC2 instances in them in the launch menu.
+- Create an ENI and attach it to an instance.
+- Create an instance with Hibernate stop, and Hibernate it.
