@@ -22,7 +22,8 @@ ELB and ASG
 
 - [✓] Create 3 EC2 instances and load balance HTTP traffic between them using CLB.
 - [] Use ALB to load balance traffic between two target groups based on paths.
-- [] 
+- [✓] Use NLB to load balance traffic between two target groups.
+- [] Use ALB to load balance traffic between EC2 instances with stickiness enabled.
 
 ## Resources
 
