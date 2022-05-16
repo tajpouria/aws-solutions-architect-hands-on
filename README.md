@@ -20,7 +20,9 @@ IAM and EC2
 
 ELB and ASG
 
-- [✓] Create 3 EC2 instances and load balance HTTP traffic between them using Class load balancer (CLB).
+- [✓] Create 3 EC2 instances and load balance HTTP traffic between them using CLB.
+- [] Use ALB to load balance traffic between two target groups based on paths.
+- [] 
 
 ## Resources
 
