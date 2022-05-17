@@ -24,6 +24,9 @@ ELB and ASG
 - [] Use ALB to load balance traffic between two target groups based on paths.
 - [✓] Use NLB to load balance traffic between two target groups.
 - [] Use ALB to load balance traffic between EC2 instances with stickiness enabled.
+- [✓] Enable Cross Zone Load balancing in CLB configuration to load balance the traffic between multiple zone.
+- [✓] Ringster a HTTPS listener ACM on a CLB, ALB and NLB.
+- [✓] Enable Connection Draining (DeReregistration delay) in one of the ELBs.
 
 ## Resources
 
