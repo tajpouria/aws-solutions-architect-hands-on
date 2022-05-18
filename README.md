@@ -30,6 +30,11 @@ ELB and ASG
 - [] Configure a ASG with ALB, and adjust the desired capacity.
 - [] Create different types of Scaling Policies, and Scheduled Actions to scale out/in instances.
 
+EBS and EFS
+
+- [] Create and attach an EBS volume to an EC2 instance, [then format and mount it](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html).
+- [] Create different volume types.
+
 ## Resources
 
 [awsboy.com](https://www.awsboy.com/)
