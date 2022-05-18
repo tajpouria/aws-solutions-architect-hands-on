@@ -27,8 +27,8 @@ ELB and ASG
 - [✓] Enable Cross Zone Load balancing in CLB configuration to load balance the traffic between multiple zone.
 - [✓] Ringster a HTTPS listener ACM on a CLB, ALB and NLB.
 - [✓] Enable Connection Draining (DeReregistration delay) in one of the ELBs.
-- [] Configure a ASG with ALB, and adjust the desired capacity.
-- [] Create different types of Scaling Policies, and Scheduled Actions to scale out/in instances.
+- [✓] Configure a ASG with ALB, and adjust the desired capacity.
+- [✓] Create different types of Scaling Policies, and Scheduled Actions to scale out/in instances.
 
 EBS and EFS
 
