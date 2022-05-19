@@ -34,6 +34,9 @@ EBS and EFS
 
 - [] Create and attach an EBS volume to an EC2 instance, [then format and mount it](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html).
 - [] Create different volume types.
+- [] Create a Snapshot and Snapshot LifeCycle Policy.
+- [] Migrate a volume to a different AZ. Make a Snapshot, and create a volume from it, to the target AZ.
+- [] Encrypt an UnEncrypted EBS volume. Make a encrypted snapshot, create a encrypted volume from it, and reattach the encrypted volume.
 
 ## Resources
 
