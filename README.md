@@ -37,6 +37,7 @@ EBS and EFS
 - [] Create a Snapshot and Snapshot LifeCycle Policy.
 - [] Migrate a volume to a different AZ. Make a Snapshot, and create a volume from it, to the target AZ.
 - [] Encrypt an UnEncrypted EBS volume. Make a encrypted snapshot, create a encrypted volume from it, and reattach the encrypted volume.
+- [] Create an EFS and mount it on two EC2 instances using [amazon-efs-utils](https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html).
 
 ## Resources
 
