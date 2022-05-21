@@ -39,6 +39,8 @@ EBS and EFS
 - [✓] Encrypt an UnEncrypted EBS volume. Make a encrypted snapshot, create a encrypted volume from it, and reattach the encrypted volume.
 - [✓] Create an EFS and mount it on two EC2 instances using [amazon-efs-utils](https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html).
 
+RDS, Aurora and, ElastiCache
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
