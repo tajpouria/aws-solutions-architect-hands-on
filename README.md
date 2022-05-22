@@ -41,7 +41,7 @@ EBS and EFS
 
 RDS, Aurora and, ElastiCache
 
-- [] Create a MySQL RDS instance, and create read replica in the same AZ.
+- [] Create a DB subnet group then create a MySQL RDS instance inside it. Create read replica in the same AZ.
 - [✓] Create an Aurora RDS instance, and configure replica auto scaling.
 - [✓] Create a Redis Cluster and a Memcached ElastiCache instances.
 
