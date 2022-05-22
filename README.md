@@ -10,7 +10,7 @@ IAM and EC2
 
 - [✓] Create an User and Admin group. Add the user to the Admin group.
 - [✓] Create an EC2 instance.
-- [✓] Create a simple private network using Security Groups. 
+- [✓] Create a simple private network using Security Groups.
 - [✓] Allocate an Elastic IP and associate it with an instance.
 - [✓] Install Apache2 on an EC2 instance using user data.
 - [✓] Create an web server AMI and use it to launch an instance.
@@ -42,6 +42,8 @@ EBS and EFS
 RDS, Aurora and, ElastiCache
 
 - [] Create a MySQL RDS instance, and create read replica in the same AZ.
+- [✓] Create an Aurora RDS instance, and configure replica auto scaling.
+- [✓] Create a Redis Cluster and a Memcached ElastiCache instances.
 
 ## Resources
 
