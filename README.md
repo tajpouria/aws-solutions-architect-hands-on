@@ -45,6 +45,10 @@ RDS, Aurora and, ElastiCache
 - [✓] Create an Aurora RDS instance, and configure replica auto scaling.
 - [✓] Create a Redis Cluster and a Memcached ElastiCache instances.
 
+Route 53
+
+- [✓] Register a domain, and Create an A record for it.
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
