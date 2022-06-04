@@ -47,7 +47,7 @@ RDS, Aurora and, ElastiCache
 
 Route 53
 
-- [✓] Register a domain, and Create an A record for it.
+- [✓] Register a domain, Create an A record, and set a 2 minutes TTL for it.
 
 ## Resources
 
