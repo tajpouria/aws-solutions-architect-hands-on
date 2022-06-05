@@ -52,6 +52,9 @@ Route 53
 - [✓] Create a A record with the Simple routing policy, and set the value to multiple IP addresses.
 - [✓] Create 3 A records with different weights using Weighted routing policy, and set each record to point a different IP address.
 - [✓] Create 3 A records, each one for a distinct region using Latency routing policy. Set each record to point to a IP address in the respective region.
+- [✓] Create 2 Health Check for 2 distinct instances. Create 3 A records using Fail Over routing policy, associate 2 of them to primary instances with previously configured Health Check, and 1 to a secondary instance.
+- [✓] Create 2 A records using GeoLocation routing policy, One to map the requests originated from north America continent, to an instance within us-north1, and the other one as the default response.
+- [✓] Create 3 Health Check for 3 distinct instances. Create 3 A records using Multi Value routing policy, and them with previously configured Health Checks.
 
 ## Resources
 
