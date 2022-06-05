@@ -48,6 +48,10 @@ RDS, Aurora and, ElastiCache
 Route 53
 
 - [✓] Register a domain, Create an A record, and set a 2 minutes TTL for it.
+- [✓] Create an Alias record that map the root domain (apex) to a subdomain.
+- [✓] Create a A record with the Simple routing policy, and set the value to multiple IP addresses.
+- [✓] Create 3 A records with different weights using Weighted routing policy, and set each record to point a different IP address.
+- [✓] Create 3 A records, each one for a distinct region using Latency routing policy. Set each record to point to a IP address in the respective region.
 
 ## Resources
 
