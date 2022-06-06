@@ -56,6 +56,8 @@ Route 53
 - [✓] Create 2 A records using GeoLocation routing policy, One to map the requests originated from north America continent, to an instance within us-north1, and the other one as the default response.
 - [✓] Create 3 Health Check for 3 distinct instances. Create 3 A records using Multi Value routing policy, and them with previously configured Health Checks.
 
+S3
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
