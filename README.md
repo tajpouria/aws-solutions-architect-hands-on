@@ -72,9 +72,8 @@ S3
 
 CLI, SDK, IAM Roles and, Policies
 
-- [] Install the AWS CLI.
-- [] Configure the AWS CLI.
-
+- [✓] Install the AWS CLI.
+- [✓] Configure the AWS CLI.
 
 ## Resources
 
