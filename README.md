@@ -58,14 +58,14 @@ Route 53
 
 Elastic Beanstalk
 
-- [] Deploy a sample application on a single instance using Beanstalk.
+- [✓] Deploy a sample application on a single instance using Beanstalk.
 
 S3
 
 - [] Create a S3 bucket, create a folder in it, and upload a file into that folder.
 - [] Enable Versioning on a bucket, version an object, and mark an object as deleted.
 - [] Upload two objects with SSE enabled, and use both KMS and S3 keys. Enable default SSE and upload another object.
-- [] Create a bucket policy that prevents uploading unencrypted objects using Policy Generator. Block public access to all S3 buckets on account level.
+- [] Create a bucket policy that prevents uploading unEncrypted objects using Policy Generator. Block public access to all S3 buckets on account level.
 - [] Experiment with bucket and object ACLs.
 - [] Host a static website, with two pages and one image on a bucket, and allow public access.
 - [] Host two static websites, each one with one pages on two different buckets. Provide CORS access to the other website, in one of the websites permission settings. Fetch the allowed website and render its content in the other website.
