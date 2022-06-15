@@ -62,7 +62,7 @@ Elastic Beanstalk
 
 S3
 
-- [] Create a S3 bucket, create a folder in it, and upload a file into that folder.
+- [✓] Create a S3 bucket, create a folder in it, and upload a file into that folder.
 - [] Enable Versioning on a bucket, version an object, and mark an object as deleted.
 - [] Upload two objects with SSE enabled, and use both KMS and S3 keys. Enable default SSE and upload another object.
 - [] Create a bucket policy that prevents uploading unEncrypted objects using Policy Generator. Block public access to all S3 buckets on account level.
