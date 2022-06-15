@@ -70,6 +70,12 @@ S3
 - [✓] Host a static website, with two pages and one image on a bucket, and allow public access.
 - [✓] Host two static websites, each one with one pages on two different buckets. Provide CORS access to the other website, in one of the websites permission settings. Fetch the allowed website and render its content in the other website.
 
+CLI, SDK, IAM Roles and, Policies
+
+- [] Install the AWS CLI.
+- [] Configure the AWS CLI.
+
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
