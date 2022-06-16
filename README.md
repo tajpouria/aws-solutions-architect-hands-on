@@ -74,8 +74,10 @@ CLI, SDK, IAM Roles and, Policies
 
 - [✓] Install the AWS CLI.
 - [✓] Configure the AWS CLI.
-- [] Attach an IAM role with AmazonS3FullAccess policy, to an EC2 instance. Use the CLI installed on instance to create, and remove a random S3 Bucket.
+- [] Attach an IAM Role with AmazonS3FullAccess policy, to an EC2 instance. Use the CLI installed on instance to create, and remove a random S3 Bucket.
 - [] `mb` a Bucket, `ls` the Buckets, `cp` a file from local to a Bucket, `ls` the content of a Bucket, `cp` a file a Bucket to local, `rb` a Bucket.
+- [] Create a custom Policy for an attached to Role, that allows reading and writing to a specific folder on a S3 bucket. Test the Policy using Policy Simulator.
+- [] Fetch an EC2 instance meta-data from `http://169.254.169.254/latest/meta-data`.
 
 ## Resources
 
