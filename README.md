@@ -79,6 +79,27 @@ CLI, SDK, IAM Roles and, Policies
 - [✓] Create a custom Policy for an attached to Role, that allows reading and writing to a specific folder on a S3 bucket. Test the Policy using Policy Simulator.
 - [✓] Fetch an EC2 instance meta-data from `http://169.254.169.254/latest/meta-data`.
 
+Advanced S3 and Athena
+
+- [] Create a S3 Bucket with Versioning enabled. Configure a root profile on CLI. Enable MFA Delete for the Bucket. Upload a object and verify the MFA delete.
+
+```sh
+aws configure --profile <profile name>
+
+# Enable S3 MFA delete
+aws s3api put-bucket-versioning --bucket <bucket name>\
+  --versioning-configuration Status=Enabled,MFADelete=Enabled\
+  --mfa '<ARN of MFA device> <MFA code>'\
+  --profile <profile name>
+
+# Disable S3 MFA delete
+
+aws s3api put-bucket-versioning --bucket <bucket name>\
+  --versioning-configuration Status=Enabled,MFADelete=Disabled\
+  --mfa '<ARN of MFA device> <MFA code>'\
+  --profile <profile name>
+```
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
