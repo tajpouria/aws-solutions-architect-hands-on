@@ -82,6 +82,8 @@ CLI, SDK, IAM Roles and, Policies
 Advanced S3 and Athena
 
 - [] Create a S3 Bucket with Versioning enabled. Configure a root profile on CLI. Enable MFA Delete for the Bucket. Upload a object and verify the MFA delete.
+- [] Enable server access logs for a Bucket and store the logs in S3.
+- [] Create cross region replication (CRR) and same region replication (SRR) rules for a Bucket with delete marker replication enabled, and verify the upload and delete replications.
 
 ```sh
 aws configure --profile <profile name>
