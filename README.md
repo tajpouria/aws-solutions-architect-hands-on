@@ -82,8 +82,6 @@ CLI, SDK, IAM Roles and, Policies
 Advanced S3 and Athena
 
 - [] Create a S3 Bucket with Versioning enabled. Configure a root profile on CLI. Enable MFA Delete for the Bucket. Upload a object and verify the MFA delete.
-- [] Enable server access logs for a Bucket and store the logs in S3.
-- [] Create cross region replication (CRR) and same region replication (SRR) rules for a Bucket with delete marker replication enabled, and verify the upload and delete replications.
 
 ```sh
 aws configure --profile <profile name>
@@ -101,6 +99,20 @@ aws s3api put-bucket-versioning --bucket <bucket name>\
   --mfa '<ARN of MFA device> <MFA code>'\
   --profile <profile name>
 ```
+
+- [] Enable server access logs for a Bucket and store the logs in S3.
+- [] Create cross region replication (CRR) and same region replication (SRR) rules for a Bucket with delete marker replication enabled, and verify the upload and delete replications.
+- [] Generate a pre-sign, ephemeral URL to access an object on S3.
+
+```sh
+aws s3 presign s3://bucket/object --expires-in 300 --region us-west-1
+
+# Set the signature version in case of error.
+aws configure set default.s3.signature_version s3v4
+```
+
+- [] Create objects in all different Storage classes and access those objects.
+- [] Create a S3 lifecycle rule to satisfy the following transition: Create an object on Standard class, move it Standard Infrequent access (IA) after 30 days, move it to intelligent tiering after 70 days, move it to Glacier after 180 days and, finally move to Glacier deep archive after 365 days.
 
 ## Resources
 
