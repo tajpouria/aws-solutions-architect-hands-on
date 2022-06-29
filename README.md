@@ -81,7 +81,7 @@ CLI, SDK, IAM Roles and, Policies
 
 Advanced S3 and Athena
 
-- [] Create a S3 Bucket with Versioning enabled. Configure a root profile on CLI. Enable MFA Delete for the Bucket. Upload a object and verify the MFA delete.
+- [✓] Create a S3 Bucket with Versioning enabled. Configure a root profile on CLI. Enable MFA Delete for the Bucket. Upload a object and verify the MFA delete.
 
 ```sh
 aws configure --profile <profile name>
@@ -91,6 +91,22 @@ aws s3api put-bucket-versioning --bucket <bucket name>\
   --versioning-configuration Status=Enabled,MFADelete=Enabled\
   --mfa '<ARN of MFA device> <MFA code>'\
   --profile <profile name>
+
+
+# List object versions
+aws s3api list-object-versions \
+  --profile <profile name> \
+  -–bucket <bucket name> \
+  -–key <object-key>
+
+# Delete an object with MFA enabled
+
+aws s3api delete-object \
+  --profile root \
+  --bucket advance-aws-and-athena \
+  --version-id <version ID> \
+  --key <object key> \
+  --mfa '<ARN of MFA device> <MFA code>'
 
 # Disable S3 MFA delete
 
