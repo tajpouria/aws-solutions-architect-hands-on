@@ -129,6 +129,8 @@ aws configure set default.s3.signature_version s3v4
 
 - [] Create objects in all different Storage classes and access those objects.
 - [] Create a S3 lifecycle rule to satisfy the following transition: Create an object on Standard class, move it Standard Infrequent access (IA) after 30 days, move it to intelligent tiering after 70 days, move it to Glacier after 180 days and, finally move to Glacier deep archive after 365 days.
+- [] Create a event notification for a S3 Bucket that writes events to SQS.
+- [] [Analyze a S3 access logs bucket using Athena](https://aws.amazon.com/premiumsupport/knowledge-center/analyze-logs-athena/).
 
 ## Resources
 
