@@ -116,8 +116,8 @@ aws s3api put-bucket-versioning --bucket <bucket name>\
   --profile <profile name>
 ```
 
-- [] Enable server access logs for a Bucket and store the logs in S3.
-- [] Create cross region replication (CRR) and same region replication (SRR) rules for a Bucket with delete marker replication enabled, and verify the upload and delete replications.
+- [✓] Enable server access logs for a Bucket and store the logs in S3.
+- [✓] Create cross region replication (CRR) and same region replication (SRR) rules for a Bucket with delete marker replication enabled, and verify the upload and delete replications.
 - [] Generate a pre-sign, ephemeral URL to access an object on S3.
 
 ```sh
