@@ -118,10 +118,10 @@ aws s3api put-bucket-versioning --bucket <bucket name>\
 
 - [✓] Enable server access logs for a Bucket and store the logs in S3.
 - [✓] Create cross region replication (CRR) and same region replication (SRR) rules for a Bucket with delete marker replication enabled, and verify the upload and delete replications.
-- [] Generate a pre-sign, ephemeral URL to access an object on S3.
+- [✓] Generate a pre-sign, ephemeral URL to access an object on S3.
 
 ```sh
-aws s3 presign s3://bucket/object --expires-in 300 --region us-west-1
+aws s3 presign s3://<bucket name>/<object name> --expires-in 300 --region us-west-1
 
 # Set the signature version in case of error.
 aws configure set default.s3.signature_version s3v4
