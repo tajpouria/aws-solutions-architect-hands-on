@@ -132,6 +132,10 @@ aws configure set default.s3.signature_version s3v4
 - [✓] Create a event notification for a S3 Bucket that writes events to SQS.
 - [✓] [Analyze a S3 access logs bucket using Athena](https://aws.amazon.com/premiumsupport/knowledge-center/analyze-logs-athena/).
 
+CloudFront and AWS Global Acceleration
+
+- [] Configure CloudFront with a S3 bucket as the origin. Make sure the objects are only available from CDN using origin access identity (OAI).
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
