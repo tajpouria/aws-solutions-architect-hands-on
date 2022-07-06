@@ -137,6 +137,12 @@ CloudFront and AWS Global Acceleration
 - [] Configure CloudFront with a S3 bucket as the origin. Make sure the objects are only available from CDN using origin access identity (OAI).
 - [] Configure Global Accelerator with two Endpoint groups, one in US and the other one in AP region, each one containing one EC2 instance.
 
+AWS Storage Extras
+
+- [] Order a Snowball.
+- [] Create all types of Storage Gateways.
+- [] Create AWS FSx for window and Lustre.
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
