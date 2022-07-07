@@ -145,6 +145,8 @@ AWS Storage Extras
 
 SQS, SNS, Kinesis and Active MQ
 
+- [] Create a SQS Queue with encryption enabled. Send messages to it and receive messages from it.
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
