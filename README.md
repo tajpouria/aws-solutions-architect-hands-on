@@ -149,6 +149,7 @@ SQS, SNS, Kinesis and Active MQ
 - [] Create a SQS queue with Visibility timeout of 40 seconds. Send messages to it and receive messages from it.
 - [] Create a SQS queue and a Dead-letter queue (DLQ). Configure the Dead-letter queue for maximum of 3 receives with 5 seconds for Visibility timeout.
 - [] Configure Delivery delay for a SQS queue. Send message with Delivery delay to it.
+- [] Create a SQS FIFO queue. Send messages with order to it and receive messages from it.
 
 ## Resources
 
