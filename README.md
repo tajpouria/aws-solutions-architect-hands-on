@@ -143,6 +143,8 @@ AWS Storage Extras
 - [] Create all types of Storage Gateways.
 - [] Create AWS FSx for window and Lustre.
 
+SQS, SNS, Kinesis and Active MQ
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
