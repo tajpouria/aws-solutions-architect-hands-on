@@ -1,6 +1,6 @@
 # AWS Solutions Architect Associate Examples
 
-A set of hands-on examples that covers the "[AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)" exam objectives.
+A hands-on to-do list to practice the "[AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)" exam objectives.
 
 Introduction
 
