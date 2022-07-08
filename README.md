@@ -100,7 +100,6 @@ aws s3api list-object-versions \
   -–key <object-key>
 
 # Delete an object with MFA enabled
-
 aws s3api delete-object \
   --profile root \
   --bucket advance-aws-and-athena \
@@ -109,7 +108,6 @@ aws s3api delete-object \
   --mfa '<ARN of MFA device> <MFA code>'
 
 # Disable S3 MFA delete
-
 aws s3api put-bucket-versioning --bucket <bucket name>\
   --versioning-configuration Status=Enabled,MFADelete=Disabled\
   --mfa '<ARN of MFA device> <MFA code>'\
@@ -143,7 +141,7 @@ AWS Storage Extras
 - [] Create all types of Storage Gateways.
 - [] Create AWS FSx for window and Lustre.
 
-SQS, SNS, Kinesis and Active MQ
+SQS, SNS, Kinesis and Amazon MQ
 
 - [] Create a SQS queue with encryption enabled. Send messages to it and receive messages from it.
 - [] Create a SQS queue with Visibility timeout of 40 seconds. Send messages to it and receive messages from it.
@@ -152,7 +150,27 @@ SQS, SNS, Kinesis and Active MQ
 - [] Create a SQS FIFO queue. Send messages with order to it and receive messages from it.
 - [] Create a SNS topic. Subscribe to it via Email. Send messages to topic and receive them via email.
 - [] Fan-out a SNS input topic to two SQS queue.
-- [] 
+- [] Create a Kinesis Data Stream with one Shard and interact with using the following AWS CLI:
+
+```sh
+aws kinesis list-streams
+
+aws kinesis describe-stream --stream-name <stream name>
+
+aws kinesis put-record \
+  --stream-data <stream name> \
+  --data '<data>' \
+  --partition-key <partition key>
+
+aws kinesis get-shard-iterator \
+  --stream-name <stream name> \
+  --shard-id <shard ID (From describe-stream)> \
+  --shard-iterator-type <TRIM_HORIZON|AT_SEQUENCE_NUMBER|AFTER_SEQUENCE_NUMBER|AT_TIMESTAMP|LATEST (aws kinesis get-shard-iterator help)> \
+
+aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard-iterator help)>'
+```
+
+- [] Create an Amazon MQ with Apache Active MQ as the engine. Tune the security group and access the Active MQ management console. Create a queue and send message to it.
 
 ## Resources
 
