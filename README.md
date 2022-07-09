@@ -132,7 +132,7 @@ aws configure set default.s3.signature_version s3v4
 
 CloudFront and AWS Global Acceleration
 
-- [] Configure CloudFront with a S3 bucket as the origin. Make sure the objects are only available from CDN using origin access identity (OAI).
+- [✓] Configure CloudFront with a S3 bucket as the origin. Make sure the objects are only available from CDN using origin access identity (OAI).
 - [] Configure Global Accelerator with two Endpoint groups, one in US and the other one in AP region, each one containing one EC2 instance.
 
 AWS Storage Extras
