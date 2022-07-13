@@ -20,7 +20,17 @@ IAM and EC2
 
 ELB and ASG
 
-- [✓] Create 3 EC2 instances and load balance HTTP traffic between them using CLB.
+- [✓] Create 3 EC2 instances and load balance HTTP traffic between them using CLB. Use the following script as user data:
+
+```sh
+#!/bin/bash
+yum update -y
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Hello World from $(hostname -f)" > /var/www/html/index.html
+```
+
 - [✓] Use ALB to load balance traffic between two target groups based on paths.
 - [✓] Use NLB to load balance traffic between two target groups.
 - [✓] Use ALB to load balance traffic between EC2 instances with stickiness enabled.
@@ -133,24 +143,24 @@ aws configure set default.s3.signature_version s3v4
 CloudFront and AWS Global Acceleration
 
 - [✓] Configure CloudFront with a S3 bucket as the origin. Make sure the objects are only available from CDN using origin access identity (OAI).
-- [] Configure Global Accelerator with two Endpoint groups, one in US and the other one in AP region, each one containing one EC2 instance.
+- [✓] Configure Global Accelerator with two Endpoint groups, one in US and the other one in EU region, each one containing one EC2 instance.
 
 AWS Storage Extras
 
-- [] Order a Snowball.
-- [] Create all types of Storage Gateways.
-- [] Create AWS FSx for window and Lustre.
+- [✓] Order a Snowball to import date from on-premise data center to AWS.
+- [✓] Create all types of Storage Gateways.
+- [✓] Create AWS FSx for window and Lustre.
 
 SQS, SNS, Kinesis and Amazon MQ
 
-- [] Create a SQS queue with encryption enabled. Send messages to it and receive messages from it.
-- [] Create a SQS queue with Visibility timeout of 40 seconds. Send messages to it and receive messages from it.
-- [] Create a SQS queue and a Dead-letter queue (DLQ). Configure the Dead-letter queue for maximum of 3 receives with 5 seconds for Visibility timeout.
-- [] Configure Delivery delay for a SQS queue. Send message with Delivery delay to it.
-- [] Create a SQS FIFO queue. Send messages with order to it and receive messages from it.
-- [] Create a SNS topic. Subscribe to it via Email. Send messages to topic and receive them via email.
-- [] Fan-out a SNS input topic to two SQS queue.
-- [] Create a Kinesis Data Stream with one Shard and interact with using the following AWS CLI:
+- [✓] Create a SQS queue with encryption enabled. Send messages to it and receive messages from it.
+- [✓] Create a SQS queue with Visibility timeout of 40 seconds. Send messages to it and receive messages from it.
+- [✓] Create a SQS queue and a Dead-letter queue (DLQ). Configure the Dead-letter queue for maximum of 3 receives with 5 seconds for Visibility timeout.
+- [✓] Configure Delivery delay for a SQS queue. Send message with Delivery delay to it.
+- [✓] Create a SQS FIFO queue. Send messages with order to it and receive messages from it.
+- [✓] Create a SNS topic. Subscribe to it via Email. Send messages to topic and receive them via email.
+- [✓] Fan-out a SNS input topic to two SQS queue.
+- [✓] Create a Kinesis Data Stream with one Shard and interact with using the following AWS CLI:
 
 ```sh
 aws kinesis list-streams
@@ -158,7 +168,7 @@ aws kinesis list-streams
 aws kinesis describe-stream --stream-name <stream name>
 
 aws kinesis put-record \
-  --stream-data <stream name> \
+  --stream-name <stream name> \
   --data '<data>' \
   --partition-key <partition key>
 
@@ -170,7 +180,7 @@ aws kinesis get-shard-iterator \
 aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard-iterator help)>'
 ```
 
-- [] Create an Amazon MQ with Apache Active MQ as the engine. Tune the security group and access the Active MQ management console. Create a queue and send message to it.
+- [✓] Create an Amazon MQ with Apache Active MQ as the engine. Tune the security group and access the Active MQ management console. Create a queue and send message to it.
 
 ## Resources
 
@@ -180,4 +190,5 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 ## References
 
-- [ip-ranges.amazonaws.com](https://ip-ranges.amazonaws.com/ip-ranges.json)
+- [ip-ranges.amazonaws.com](https://ip-ranges.amazonaws.com/ip-ranges.json)+
+- [evkalinin/awsping](https://hub.docker.com/r/evkalinin/awsping)
