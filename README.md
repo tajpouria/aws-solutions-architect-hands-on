@@ -182,6 +182,11 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 - [✓] Create an Amazon MQ with Apache Active MQ as the engine. Tune the security group and access the Active MQ management console. Create a queue and send message to it.
 
+AWS Serverless
+
+- [] Create a Lambda function from existing blueprint. Access and log the event properties on Lambda function. Make the Lambda function to raise an Error. Monitor the success and failed logs on Cloud watch.
+- []
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
