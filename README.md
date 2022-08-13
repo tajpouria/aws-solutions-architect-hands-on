@@ -195,6 +195,8 @@ Networking - VPC
 - [✓] Create an internet gateway for VPC. Create 2 routing table and associate each one of them with public and private subnets.
 - [✓] Create an EC2 instance in one of the public subnets. Tune the routing table and security groups to allow SSH into instance from outside and provide public internet access for the instance.
 - [✓] Create an EC2 instance in on of the private subnets. Provision an [NAT instance](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html) in one of the public subnets (Make sure [disable source/destination check](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html#EIP_Disable_SrcDestCheck)). Tune the security group and routing table to allow: 1. SSH into instance from **private subnet**. 2. Allow HTTP, HTTPS, and ping from private instance to public internet.
+- [✓] Replace the instance NAT gateway with an AWS NAT gateway.
+- [] Enable DNS resolution settings (enableDnsSupport) and DNS hostname setting (enableDnsHostname) for the VPC. Create a private hosted zone (Route53). Create a CNAME record that resolves to [tajpouria.com](https://tajpouria.com).
 
 ## Resources
 
@@ -204,5 +206,5 @@ Networking - VPC
 
 ## References
 
-- [ip-ranges.amazonaws.com](https://ip-ranges.amazonaws.com/ip-ranges.json)+
+- [ip-ranges.amazonaws.com](https://ip-ranges.amazonaws.com/ip-ranges.json)
 - [evkalinin/awsping](https://hub.docker.com/r/evkalinin/awsping)
