@@ -190,10 +190,11 @@ AWS Serverless
 
 Networking - VPC
 
-- [] Create a VPC with 2 CIDR blocks.
-- [] Create 4 subnets in 2 different AZ with auto-assign IPv4 setting enabled. 2 public with smaller number of IPVv4, and 2 private with more available IPv4.
-- [] Create an internet gateway for VPC. Create 2 routing table and associate each one of them with public and private subnets.
-- [] Create an EC2 instance in one of the public subnets. Tune the routing table and security groups to allow SSH into instance from outside and provide public internet access for the instance.
+- [✓] Create a VPC with 2 CIDR blocks.
+- [✓] Create 4 subnets in 2 different AZ with auto-assign IPv4 setting enabled. 2 public with smaller number of IPv4, and 2 private with more available IPv4.
+- [✓] Create an internet gateway for VPC. Create 2 routing table and associate each one of them with public and private subnets.
+- [✓] Create an EC2 instance in one of the public subnets. Tune the routing table and security groups to allow SSH into instance from outside and provide public internet access for the instance.
+- [✓] Create an EC2 instance in on of the private subnets. Provision an [NAT instance](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html) in one of the public subnets (Make sure [disable source/destination check](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html#EIP_Disable_SrcDestCheck)). Tune the security group and routing table to allow: 1. SSH into instance from **private subnet**. 2. Allow HTTP, HTTPS, and ping from private instance to public internet.
 
 ## Resources
 
