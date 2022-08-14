@@ -197,6 +197,12 @@ Networking - VPC
 - [✓] Create an EC2 instance in on of the private subnets. Provision an [NAT instance](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html) in one of the public subnets (Make sure [disable source/destination check](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html#EIP_Disable_SrcDestCheck)). Tune the security group and routing table to allow: 1. SSH into instance from **private subnet**. 2. Allow HTTP, HTTPS, and ping from private instance to public internet.
 - [✓] Replace the instance NAT gateway with an AWS NAT gateway.
 - [] Enable DNS resolution settings (enableDnsSupport) and DNS hostname setting (enableDnsHostname) for the VPC. Create a private hosted zone (Route53). Create a CNAME record that resolves to [tajpouria.com](https://tajpouria.com).
+- [] Install Apache web server on public instance. Create a NACL (Network Access Control List) rule that deny HTTP inbound traffic, then remove it. Create a NACL rule that deny all the outbound traffic, then remove it.
+- [] Create another VPC with private subnet and a EC2 instance in it (Make sure the IP ranges is not overlapping with the exiting VPC). Peer two VPCs using VPC peering. Tune the routing tables rules on both VPCs that allows ping instances using their private IP addresses.
+- [] Remove the routing rule that allow public internet access to a private instance. Create an IAM role that allows S3 full access and attach it to the private instance. Create an gateway endpoint that let the instance to access the S3 service. (Make sure include the gateway endpoint region to route the request correctly `aws s3 ls --regions eu-west-1`)
+- [] Create a log group in Cloud Watch. Enable public VPC flow logs and store the logs in created log group. Capture the flow logs for a public instance. (Reset the internet access routing table rule that you removed in the previous step.)
+- [] Enable public VPC flow logs and store the logs in a S3 bucket. Capture the flow logs for a public instance. [Query Amazon VPC flow logs](https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs.html) using Athena.
+- [] Create an egress-only internet gateway. Add a routing rule to route all the outgoing IPv6 requests (`::/0`) to egress-only gateway.
 
 ## Resources
 
