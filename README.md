@@ -204,6 +204,11 @@ Networking - VPC
 - [] Enable public VPC flow logs and store the logs in a S3 bucket. Capture the flow logs for a public instance. [Query Amazon VPC flow logs](https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs.html) using Athena.
 - [] Create an egress-only internet gateway. Add a routing rule to route all the outgoing IPv6 requests (`::/0`) to egress-only gateway.
 
+CloudWatch and CloudTrail
+
+- [] Launch an EC2 instance and monitor its default metrics in CloudWatch dashboard.
+- [] 
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
