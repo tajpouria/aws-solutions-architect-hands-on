@@ -206,7 +206,9 @@ Networking - VPC
 
 CloudWatch and CloudTrail
 
-- [] Launch an EC2 instance and monitor its default metrics in CloudWatch dashboard.
+- [✓] Launch an EC2 instance and monitor its default metrics in CloudWatch dashboard.
+- [✓] Create a global CloudWatch dashboard with widget for EC2 instances in different regions.
+- [✓] Create an Amazon Linux 2 EC2 instance, attach an IAM role with [`CloudWatchAgentServerRole`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent.html) policy to it, install [amazon-cloudwatch-agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html), and explore the logs in Cloudwatch logs.
 - [] 
 
 ## Resources
