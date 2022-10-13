@@ -210,7 +210,9 @@ CloudWatch and CloudTrail
 - [✓] Create a global CloudWatch dashboard with widget for EC2 instances in different regions.
 - [✓] Create an Amazon Linux 2 EC2 instance, attach an IAM role with [`CloudWatchAgentServerRole`](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent.html) policy to it, install [amazon-cloudwatch-agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html), and explore the logs in Cloudwatch logs.
 - [✓] Setup a Cloudwatch alarm that sends an email notification whenever the NetworkIn metric of the target ASG is too high.
-
+- [✓] Define a EventBridge rule that sends an event to a SNS topic whenever the Code pipeline execution failed.
+- [✓] Explore account activities in CloudTrail.
+- [✓] Enable AWS Config to evaluate all the resources. Setup the `restrict-ssh` rule the be evaluated upon SecurityGroup changes. Checkout the compliance timeline for it.
 
 ## Resources
 
