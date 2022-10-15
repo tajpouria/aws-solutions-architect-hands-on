@@ -88,6 +88,8 @@ CLI, SDK, IAM Roles and, Policies
 - [✓] `mb` a Bucket, `ls` the Buckets, `cp` a file from local to a Bucket, `ls` the content of a Bucket, `cp` a file a Bucket to local, `rb` a Bucket.
 - [✓] Create a custom Policy for an attached to Role, that allows reading and writing to a specific folder on a S3 bucket. Test the Policy using Policy Simulator.
 - [✓] Fetch an EC2 instance meta-data from `http://169.254.169.254/latest/meta-data`.
+- [✓] Create an Organization with a root account called "master". Create another account with the name "child" and Invite it to join the organization. Create an Organization Unit (OU) called "Prod" within root OU and move the child account to it. Enable Service Control Policy (SCP), create a deny Athena access SCP and attach to Prod OU.
+- [✓] Use the AWS ResourceAccessManager service (RAM) to share a subnet from one account to another.
 
 Advanced S3 and Athena
 
