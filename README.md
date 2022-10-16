@@ -65,6 +65,7 @@ Route 53
 - [✓] Create 2 Health Check for 2 distinct instances. Create 3 A records using Fail Over routing policy, associate 2 of them to primary instances with previously configured Health Check, and 1 to a secondary instance.
 - [✓] Create 2 A records using GeoLocation routing policy, One to map the requests originated from north America continent, to an instance within us-north1, and the other one as the default response.
 - [✓] Create 3 Health Check for 3 distinct instances. Create 3 A records using Multi Value routing policy, and them with previously configured Health Checks.
+- [✓] Create a Database migration task using AWS DatabaseMigration (DMS) that continuously replicate data from a RDS instance to another with the same engine.
 
 Elastic Beanstalk
 
