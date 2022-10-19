@@ -217,6 +217,10 @@ CloudWatch and CloudTrail
 - [✓] Explore account activities in CloudTrail.
 - [✓] Enable AWS Config to evaluate all the resources. Setup the `restrict-ssh` rule the be evaluated upon SecurityGroup changes. Checkout the compliance timeline for it.
 
+Other Services
+
+- [✓] Create a CloudFormation Template to provision an EC2 instance. Create a Stack from it. Update the Stack template to add two SGs and one EIP, attach them to existing EC2 instance, Receive the one of the SG description as Parameter and Output the allocated EIP. Delete the Stack.
+
 ## Resources
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
