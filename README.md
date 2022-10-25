@@ -2,11 +2,11 @@
 
 A hands-on to-do list to practice the "[AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)" exam objectives.
 
-Introduction
+**Introduction**
 
 - [✓] Setup a cost budget that sends an email alert as soon as 1 cent has been spent.
 
-IAM and EC2
+**IAM and EC2**
 
 - [✓] Create an User and Admin group. Add the user to the Admin group.
 - [✓] Create an EC2 instance.
@@ -18,7 +18,7 @@ IAM and EC2
 - [✓] Create an ENI and attach it to an instance.
 - [✓] Create an instance with Hibernate stop, and Hibernate it.
 
-ELB and ASG
+**ELB and ASG**
 
 - [✓] Create 3 EC2 instances and load balance HTTP traffic between them using CLB. Use the following script as user data:
 
@@ -40,7 +40,7 @@ echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 - [✓] Configure a ASG with ALB, and adjust the desired capacity.
 - [✓] Create different types of Scaling Policies, and Scheduled Actions to scale out/in instances.
 
-EBS and EFS
+**EBS and EFS**
 
 - [✓] Create and attach an EBS volume to an EC2 instance, [then format and mount it](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html).
 - [✓] Create different volume types.
@@ -49,13 +49,13 @@ EBS and EFS
 - [✓] Encrypt an UnEncrypted EBS volume. Make a encrypted snapshot, create a encrypted volume from it, and reattach the encrypted volume.
 - [✓] Create an EFS and mount it on two EC2 instances using [amazon-efs-utils](https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html).
 
-RDS, Aurora and, ElastiCache
+**RDS, Aurora and, ElastiCache**
 
 - [✓] Create a DB subnet group then create a MySQL RDS instance inside it. Create read replica in the same AZ.
 - [✓] Create an Aurora RDS instance, and configure replica auto scaling.
 - [✓] Create a Redis Cluster and a Memcached ElastiCache instances.
 
-Route 53
+**Route 53**
 
 - [✓] Register a domain, Create an A record, and set a 2 minutes TTL for it.
 - [✓] Create an Alias record that map the root domain (apex) to a subdomain.
@@ -67,11 +67,11 @@ Route 53
 - [✓] Create 3 Health Check for 3 distinct instances. Create 3 A records using Multi Value routing policy, and them with previously configured Health Checks.
 - [✓] Create a Database migration task using AWS DatabaseMigration (DMS) that continuously replicate data from a RDS instance to another with the same engine.
 
-Elastic Beanstalk
+**Elastic Beanstalk**
 
 - [✓] Deploy a sample application on a single instance using Beanstalk.
 
-S3
+**S3**
 
 - [✓] Create a S3 bucket, create a folder in it, and upload a file into that folder.
 - [✓] Enable Versioning on a bucket, version an object, and mark an object as deleted.
@@ -81,7 +81,7 @@ S3
 - [✓] Host a static website, with two pages and one image on a bucket, and allow public access.
 - [✓] Host two static websites, each one with one pages on two different buckets. Provide CORS access to the other website, in one of the websites permission settings. Fetch the allowed website and render its content in the other website.
 
-CLI, SDK, IAM Roles and, Policies
+**CLI, SDK, IAM Roles and, Policies**
 
 - [✓] Install the AWS CLI.
 - [✓] Configure the AWS CLI.
@@ -92,7 +92,7 @@ CLI, SDK, IAM Roles and, Policies
 - [✓] Create an Organization with a root account called "master". Create another account with the name "child" and Invite it to join the organization. Create an Organization Unit (OU) called "Prod" within root OU and move the child account to it. Enable Service Control Policy (SCP), create a deny Athena access SCP and attach to Prod OU.
 - [✓] Use the AWS ResourceAccessManager service (RAM) to share a subnet from one account to another.
 
-Advanced S3 and Athena
+**Advanced S3 and Athena**
 
 - [✓] Create a S3 Bucket with Versioning enabled. Configure a root profile on CLI. Enable MFA Delete for the Bucket. Upload a object and verify the MFA delete.
 
@@ -143,18 +143,18 @@ aws configure set default.s3.signature_version s3v4
 - [✓] Create a event notification for a S3 Bucket that writes events to SQS.
 - [✓] [Analyze a S3 access logs bucket using Athena](https://aws.amazon.com/premiumsupport/knowledge-center/analyze-logs-athena/).
 
-CloudFront and AWS Global Acceleration
+**CloudFront and AWS Global Acceleration**
 
 - [✓] Configure CloudFront with a S3 bucket as the origin. Make sure the objects are only available from CDN using origin access identity (OAI).
 - [✓] Configure Global Accelerator with two Endpoint groups, one in US and the other one in EU region, each one containing one EC2 instance.
 
-AWS Storage Extras
+**AWS Storage Extras**
 
 - [✓] Order a Snowball to import date from on-premise data center to AWS.
 - [✓] Create all types of Storage Gateways.
 - [✓] Create AWS FSx for window and Lustre.
 
-SQS, SNS, Kinesis and Amazon MQ
+**SQS, SNS, Kinesis and Amazon MQ**
 
 - [✓] Create a SQS queue with encryption enabled. Send messages to it and receive messages from it.
 - [✓] Create a SQS queue with Visibility timeout of 40 seconds. Send messages to it and receive messages from it.
@@ -185,13 +185,13 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 - [✓] Create an Amazon MQ with Apache Active MQ as the engine. Tune the security group and access the Active MQ management console. Create a queue and send message to it.
 
-AWS Serverless
+**AWS Serverless**
 
 - [] Create a Lambda function from existing blueprint. Access and log the event properties on Lambda function. Make the Lambda function to raise an Error. Monitor the success and failed logs on Cloud watch.
 - [] Create a DynamoDB table. Insert an item into it.
 - [] AWS API gateway re watch ??
 
-Networking - VPC
+**Networking - VPC**
 
 - [✓] Create a VPC with 2 CIDR blocks.
 - [✓] Create 4 subnets in 2 different AZ with auto-assign IPv4 setting enabled. 2 public with smaller number of IPv4, and 2 private with more available IPv4.
@@ -207,7 +207,7 @@ Networking - VPC
 - [] Enable public VPC flow logs and store the logs in a S3 bucket. Capture the flow logs for a public instance. [Query Amazon VPC flow logs](https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs.html) using Athena.
 - [] Create an egress-only internet gateway. Add a routing rule to route all the outgoing IPv6 requests (`::/0`) to egress-only gateway.
 
-CloudWatch and CloudTrail
+**CloudWatch and CloudTrail**
 
 - [✓] Launch an EC2 instance and monitor its default metrics in CloudWatch dashboard.
 - [✓] Create a global CloudWatch dashboard with widget for EC2 instances in different regions.
@@ -217,11 +217,45 @@ CloudWatch and CloudTrail
 - [✓] Explore account activities in CloudTrail.
 - [✓] Enable AWS Config to evaluate all the resources. Setup the `restrict-ssh` rule the be evaluated upon SecurityGroup changes. Checkout the compliance timeline for it.
 
-Other Services
+**Other Services**
 
 - [✓] Create a CloudFormation Template to provision an EC2 instance. Create a Stack from it. Update the Stack template to add two SGs and one EIP, attach them to existing EC2 instance, Receive the one of the SG description as Parameter and Output the allocated EIP. Delete the Stack.
 
 ## Resources
+
+### Design Secure Architecture
+
+- [AWS Security Services Overview – WAF, Shield, CloudHSM, KMS](https://www.youtube.com/watch?v=-1S-RdeAmMo)
+
+**WAF and Firewall Manager**
+
+- [AWS Web Application Firewall (WAF) Full Tutorial | Learn AWS Security Now!](https://www.youtube.com/watch?v=udug43AWeJw)
+- [AWS WAF Cheat Sheet](https://tutorialsdojo.com/aws-waf/)
+- [AWS Firewall Manager Cheat Sheet](https://tutorialsdojo.com/aws-firewall-manager/)
+
+**Shield**
+
+- [AWS Shield Tutorial | AWS Shield Advanced DDOS mitigation theory and hands-on](https://www.youtube.com/watch?v=BDeCVOpCsVo)
+- [AWS Shield Cheat Sheet](https://digitalcloud.training/aws-waf-shield/#aws-shield)
+
+**KMS**
+
+- [AWS Key Management Service (AWS KMS)](https://tutorialsdojo.com/aws-firewall-manager/)
+- [AWS KMS Cheat Sheet](https://digitalcloud.training/aws-kms/)
+
+**CloudHSM**
+
+- [CLF-C01 — CloudHSM](https://www.youtube.com/watch?v=Ebf4v2ahgmk)
+
+### Design Hight-Performing Architectures
+
+### Design Resilient Architecture
+
+### Design Cost-Optimized Architecture
+
+### Design Secure Applications and Architectures
+
+### General
 
 - [Stephane Maarek](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/)
 - [Jon Bonso](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c03/)
