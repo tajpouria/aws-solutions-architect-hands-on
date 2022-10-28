@@ -230,7 +230,7 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 **WAF and Firewall Manager**
 
 - [AWS Web Application Firewall (WAF) Full Tutorial | Learn AWS Security Now!](https://www.youtube.com/watch?v=udug43AWeJw)
-- [AWS WAF Cheat Sheet](https://tutorialsdojo.com/aws-waf/)
+- [AWS WAF Cheat Sheet](https://digitalcloud.training/aws-waf-shield/)
 - [AWS Firewall Manager Cheat Sheet](https://tutorialsdojo.com/aws-firewall-manager/)
 
 **Shield**
@@ -247,13 +247,14 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 - [CLF-C01 — CloudHSM](https://www.youtube.com/watch?v=Ebf4v2ahgmk)
 
-### Design Hight-Performing Architectures
+**VPC**
 
-### Design Resilient Architecture
+- [AWS VPC Beginner to Pro - Virtual Private Cloud Tutorial](https://www.youtube.com/watch?v=g2JOHLHh4rI)
+- [AWS VPC Cheat Sheet](https://digitalcloud.training/amazon-vpc/)
 
-### Design Cost-Optimized Architecture
+**Network Firewall**
 
-### Design Secure Applications and Architectures
+- [AWS Network Firewall with Demo | AWS Network Firewall Architecture explained](https://www.youtube.com/watch?v=V6bRE6ggYaU)
 
 ### General
 
