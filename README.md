@@ -223,12 +223,17 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 ## Resources
 
-### Design Secure Architecture
+**APIGateway**
 
-- [AWS Security Services Overview – WAF, Shield, CloudHSM, KMS](https://www.youtube.com/watch?v=-1S-RdeAmMo)
+- [What is Amazon API Gateway?](https://www.youtube.com/watch?v=1XcpQHfTOvs)
+- [REST vs HTTP APIs in API Gateway (1/2)](https://www.youtube.com/watch?v=5VikkwAxr-E)
+- [AWS API Gateway to Lambda Tutorial in Python | Build a HTTP API (2/2)](https://www.youtube.com/watch?v=M91vXdjve7A&t=1333s)
+- [AWS API Gateway to Lambda Tutorial in Python | Build a REST API](https://www.youtube.com/watch?v=uFsaiEhr1zs)
+- [Amazon API Gateway Cheat Sheet](https://digitalcloud.training/amazon-api-gateway/)
 
 **WAF and Firewall Manager**
 
+- [AWS Security Services Overview – WAF, Shield, CloudHSM, KMS](https://www.youtube.com/watch?v=-1S-RdeAmMo)
 - [AWS Web Application Firewall (WAF) Full Tutorial | Learn AWS Security Now!](https://www.youtube.com/watch?v=udug43AWeJw)
 - [AWS WAF Cheat Sheet](https://digitalcloud.training/aws-waf-shield/)
 - [AWS Firewall Manager Cheat Sheet](https://tutorialsdojo.com/aws-firewall-manager/)
@@ -255,6 +260,10 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 **Network Firewall**
 
 - [AWS Network Firewall with Demo | AWS Network Firewall Architecture explained](https://www.youtube.com/watch?v=V6bRE6ggYaU)
+
+**GuardDuty**
+
+- [AWS GuardDuty Cheat Sheet](https://digitalcloud.training/aws-guardduty/)
 
 ### General
 
