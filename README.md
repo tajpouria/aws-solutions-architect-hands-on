@@ -231,6 +231,11 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 - [AWS API Gateway to Lambda Tutorial in Python | Build a REST API](https://www.youtube.com/watch?v=uFsaiEhr1zs)
 - [Amazon API Gateway Cheat Sheet](https://digitalcloud.training/amazon-api-gateway/)
 
+**RDS**
+
+- [Amazon Aurora Introduction](https://www.youtube.com/watch?v=ZCt3ctVfGIk)
+- [AWS Aurora Cheat Sheet](https://tutorialsdojo.com/amazon-aurora)
+
 **WAF and Firewall Manager**
 
 - [AWS Security Services Overview – WAF, Shield, CloudHSM, KMS](https://www.youtube.com/watch?v=-1S-RdeAmMo)
