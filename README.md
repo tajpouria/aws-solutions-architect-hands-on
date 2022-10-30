@@ -233,7 +233,7 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 **EC2**
 
-[AWS EC2 Cheat Sheet](https://tutorialsdojo.com/amazon-elastic-compute-cloud-amazon-ec2/)
+- [AWS EC2 Cheat Sheet](https://tutorialsdojo.com/amazon-elastic-compute-cloud-amazon-ec2/)
 
 **RDS**
 
