@@ -234,6 +234,11 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 **EC2**
 
 - [AWS EC2 Cheat Sheet](https://tutorialsdojo.com/amazon-elastic-compute-cloud-amazon-ec2/)
+- [Amazon S3 vs EBS vs EFS Cheat Sheet](https://tutorialsdojo.com/amazon-s3-vs-ebs-vs-efs)
+
+**FSx**
+
+- [FSx Cheat Sheet](https://tutorialsdojo.com/amazon-fsx)
 
 **RDS**
 
@@ -251,6 +256,10 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 - [AWS Shield Tutorial | AWS Shield Advanced DDOS mitigation theory and hands-on](https://www.youtube.com/watch?v=BDeCVOpCsVo)
 - [AWS Shield Cheat Sheet](https://digitalcloud.training/aws-waf-shield/#aws-shield)
+
+**S3**
+
+[AWS S3 Cheat Sheet](https://tutorialsdojo.com/amazon-s3)
 
 **KMS**
 
