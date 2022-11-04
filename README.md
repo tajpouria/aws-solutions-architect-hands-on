@@ -189,7 +189,6 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 
 - [] Create a Lambda function from existing blueprint. Access and log the event properties on Lambda function. Make the Lambda function to raise an Error. Monitor the success and failed logs on Cloud watch.
 - [] Create a DynamoDB table. Insert an item into it.
-- [] AWS API gateway re watch ??
 
 **Networking - VPC**
 
