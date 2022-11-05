@@ -233,7 +233,7 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 **DynamoDB**
 
 - [AWS DynamoDB Tutorial For Beginners](https://www.youtube.com/watch?v=2k2GINpO308)
-- [Amazon DynamoDB Cheat Sheet](https://digitalcloud.training/amazon-dynamodb/)
+- [Amazon DynamoDB Cheat Sheet](https://digitalcloud.training/amazon-dynamodb/) till Performance and Throttling
 
 **EC2**
 
