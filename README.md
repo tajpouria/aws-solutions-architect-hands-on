@@ -233,7 +233,9 @@ aws kinesis get-records --shard-iterator '<shard iterator (aws kinesis get-shard
 **DynamoDB**
 
 - [AWS DynamoDB Tutorial For Beginners](https://www.youtube.com/watch?v=2k2GINpO308)
-- [Amazon DynamoDB Cheat Sheet](https://digitalcloud.training/amazon-dynamodb/) till Performance and Throttling
+- [What is a DynamoDB LSI (Local Secondary Index) ?](https://www.youtube.com/watch?v=Y8gMoZOMYyg)
+- [What is a DynamoDB GSI (Global Secondary Index) ?](https://www.youtube.com/watch?v=ihMOlb8EZKE)
+- [Amazon DynamoDB Cheat Sheet](https://digitalcloud.training/amazon-dynamodb/)
 
 **EC2**
 
